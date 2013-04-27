@@ -4,7 +4,7 @@
 class Feeds
 {
 	// tagfeed function manipulates Habari's tag feed
-	public function tagfeed(&$tag)
+	public function tagfeed(&$tag, $xml, $params, $handler_vars)
 	{
 		// check if feed is a tag collection and executes the code in the block
 		if ( Controller::get_action() == 'tag_collection' )
@@ -18,7 +18,7 @@ class Feeds
 	} // end function
 	
 	// the postfeed function manipulates Habari entry comment feed
-	public function postfeed(&$slug)
+	public function postfeed(&$slug, $xml, $params, $handler_vars)
 	{
 		// check if feed is an entry comment feed and executes the code in the block
 		if ( Controller::get_action() == 'entry_comments' )
@@ -31,7 +31,7 @@ class Feeds
 		}	
 	} // end function
 	
-	public function commentfeed()
+	public function commentfeed($xml, $params, $handler_vars)
 	{
 		// check if feed is the comment feed and executes the code in the block
 		if ( Controller::get_action() == 'comments' )

@@ -30,8 +30,8 @@ class FeedTitles extends Plugin
 		$slug = Controller::get_var('slug');
 		
 		// the following runs the function used to manipulate the main comment feed and comment feeds for posts
-		$this->feed->commentfeed();
-		$this->feed->postfeed($slug);
+		$this->feed->commentfeed($xml, $params, $handler_vars);
+		$this->feed->postfeed($slug, $xml, $params, $handler_vars);
 	} // end function
 	
 	// the following function is needed to work with the tag feed
@@ -41,7 +41,7 @@ class FeedTitles extends Plugin
 		$tag = Controller::get_var('tag');
 		
 		// the following runs the function used to manipulate tag feeds
-		$this->feed->tagfeed($tag);
+		$this->feed->tagfeed($tag, $xml, $params, $handler_vars);
 	} // end function
 } // end class
 ?>
