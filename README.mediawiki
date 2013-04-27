@@ -1,0 +1,31 @@
+= Feeds Title =
+'''Version:''' 0.1
+'''Copyright:''' 2013 Bryce Campbell
+
+==Description== 
+
+This plugin  combines the functionality of the following three plugins:
+
+<ul>
+<li>[https://github.com/bryceac/TagTitle Tag Title]</li>
+<li>[https://github.com/bryceac/PostTitle Post Title]</li>
+<li>[https://github.com/bryceac/CommentTitle Comment Title]</li>
+</ul>
+
+Separately, the first item manipulates the feed title for tag feed, while the second and third deal with feed titles of the comment feeds, and they all manipulate the subtitles for their respective feeds.
+
+== Support ==
+
+If you are encountering issues, feel free to let me know at the address below.
+
+'''E-mail:''' brycecmpbell@gmail.com
+
+Please make sure that The name of the plugin in and '''Habari''' are in the subject field, so that I know what you talking about.
+
+== License ==
+
+This plugin is Licensed under the [http://opensource.org/licenses/MIT MIT License].
+
+== Misc. ==
+
+This plugin is currently being tested with version 0.9 of Habari. In the mean time, I recommend getting the three plugins separately, until the issues with this plugin are worked out.
