@@ -20,7 +20,7 @@ class FeedTitles extends Plugin
 	public function action_init()
 	{
 		// create an object of the custom class
-		new Feeds(); 
+		$this->feed = new Feeds(); 
 	}
 	
 	// the following function is needed to work with the comment feeds
