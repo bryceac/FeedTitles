@@ -12,7 +12,7 @@ This plugin  combines the functionality of the following three plugins:
 <li>[https://github.com/bryceac/CommentTitle Comment Title]</li>
 </ul>
 
-Separately, the first item manipulates the feed title for tag feed, while the second and third deal with feed titles of the comment feeds, and they all manipulate the subtitles for their respective feeds.
+Separately, the first item manipulates the feed title for tag feed, while the second and third deal with feed titles of the comment feeds, and they all manipulate the subtitles to reflect what the feeds should contain.
 
 == Support ==
 

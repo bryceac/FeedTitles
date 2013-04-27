@@ -16,7 +16,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <license url="http://opensource.org/licenses/MIT">MIT License</license>
 <author url="http://blog.brycecampbell.me">Bryce C.</author>
 <version>0.1</version>
-<description>This plugin takes the functionality each of my three plugins dealing with feeds and merges them together.</description>
+    <description>This plugin manipulates the feed titles and subtitles of all Habari feeds, except the main feed, in order to ensure that users know what they are subscribing to.</description>
 <copyright>2013</copyright>
 <guid>77135df2-cb8b-416a-82a9-b4a6ebb53f2a</guid>
 </pluggable>
