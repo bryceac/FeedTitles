@@ -28,4 +28,4 @@ This plugin is Licensed under the [http://opensource.org/licenses/MIT MIT Licens
 
 == Misc. ==
 
-This plugin is currently being tested with version 0.9 of Habari. In the mean time, I recommend getting the three plugins separately, until the issues with this plugin are worked out.
+This plugin has been tested with version 0.9 of Habari. In the mean time, It is not certain if it works on earlier versions.
