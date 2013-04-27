@@ -18,7 +18,7 @@ class Feeds
 	} // end function
 	
 	// the postfeed function manipulates Habari entry comment feed
-	public function postfeed(&slug)
+	public function postfeed(&$slug)
 	{
 		// check if feed is an entry comment feed and executes the code in the block
 		if ( Controller::get_action() == 'entry_comments' )
