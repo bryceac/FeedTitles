@@ -23,6 +23,20 @@ class FeedTitles extends Plugin
 		$this->feed = new Feeds(); 
 	}
 	
+	public function configure()
+	{
+		// set default values
+		Options::get('change_tag', true);
+		Options::get('change_pcomments', true);
+		Options::get('change_mcomments', true);
+		
+		$ui = new FormUI('feed_config');
+		$tfeed = $ui->append('checkbox', 'mod_tag', 'change_tag', _t('Modify tag feed'));
+		$pcomment = $ui->append('checkbox', 'mod_pcomments', 'change_pcomments', _t('Modify post comment feeds'));
+		$mcomment = $ui->append('checkbox', 'mod_mcomments', 'change_mcomments', _t('Modify main comment feed'));
+		$ui->append('submit', 'save', 'Save');
+	}
+	
 	// the following function is needed to work with the comment feeds
 	public function action_atom_get_comments($xml, $params, $handler_vars)
 	{
