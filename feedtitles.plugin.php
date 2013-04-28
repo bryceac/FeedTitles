@@ -45,9 +45,16 @@ class FeedTitles extends Plugin
 		// used to retrieve slug variable
 		$slug = Controller::get_var('slug');
 		
-		// the following runs the function used to manipulate the main comment feed and comment feeds for posts
-		$this->feed->commentfeed($xml, $params, $handler_vars);
-		$this->feed->postfeed($slug, $xml, $params, $handler_vars);
+		if (Options::get('change_pcomments') && Options::get('change_mcomments'))
+		{
+			// the following runs the function used to manipulate the main comment feed and comment feeds for posts
+			$this->feed->commentfeed($xml, $params, $handler_vars);
+			$this->feed->postfeed($slug, $xml, $params, $handler_vars);
+		} elseif (Options::get('change_pcomments')) {
+			$this->feed->postfeed($slug, $xml, $params, $handler_vars);
+		} elseif (Options::get('change_mcomments')) {
+			$this->feed->commentfeed($xml, $params, $handler_vars);
+		}
 	} // end function
 	
 	// the following function is needed to work with the tag feed
@@ -56,8 +63,11 @@ class FeedTitles extends Plugin
 		// used to retrieve tag variable
 		$tag = Controller::get_var('tag');
 		
-		// the following runs the function used to manipulate tag feeds
-		$this->feed->tagfeed($tag, $xml, $params, $handler_vars);
+		if (Options::get('change_tag'))
+		{
+			// the following runs the function used to manipulate tag feeds
+			$this->feed->tagfeed($tag, $xml, $params, $handler_vars);
+		}
 	} // end function
 } // end class
 ?>
