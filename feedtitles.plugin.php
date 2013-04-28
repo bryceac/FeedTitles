@@ -30,11 +30,13 @@ class FeedTitles extends Plugin
 		Options::get('change_pcomments', true);
 		Options::get('change_mcomments', true);
 		
+		// the following creates the config form
 		$ui = new FormUI('feed_config');
 		$tfeed = $ui->append('checkbox', 'mod_tag', 'change_tag', _t('Modify tag feed'));
 		$pcomment = $ui->append('checkbox', 'mod_pcomments', 'change_pcomments', _t('Modify post comment feeds'));
 		$mcomment = $ui->append('checkbox', 'mod_mcomments', 'change_mcomments', _t('Modify main comment feed'));
 		$ui->append('submit', 'save', 'Save');
+		return $ui;
 	}
 	
 	// the following function is needed to work with the comment feeds
