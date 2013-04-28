@@ -54,7 +54,7 @@ class FeedTitles extends Plugin
 			$this->feed->postfeed($slug, $xml, $params, $handler_vars);
 		} elseif (Options::get('change_mcomments')) {
 			$this->feed->commentfeed($xml, $params, $handler_vars);
-		}
+		} else;
 	} // end function
 	
 	// the following function is needed to work with the tag feed
