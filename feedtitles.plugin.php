@@ -35,9 +35,17 @@ class FeedTitles extends Plugin
 		$tfeed = $ui->append('checkbox', 'mod_tag', 'change_tag', _t('Modify tag feed'));
 		$pcomment = $ui->append('checkbox', 'mod_pcomments', 'change_pcomments', _t('Modify post comment feeds'));
 		$mcomment = $ui->append('checkbox', 'mod_mcomments', 'change_mcomments', _t('Modify main comment feed'));
+		$ui->success(array($this, 'updated_config')); // set function to display success message
 		$ui->append('submit', 'save', 'Save');
 		return $ui;
 	}
+	
+	//the following issues a message, upon successful configuration
+	public function updated_config($ui)
+	{
+		Session::notice('Feed Titles setting updated');
+		$ui->save();
+	} // end function
 	
 	// the following function is needed to work with the comment feeds
 	public function action_atom_get_comments($xml, $params, $handler_vars)
