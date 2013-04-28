@@ -34,7 +34,7 @@ This plugin is Licensed under the [http://opensource.org/licenses/MIT MIT Licens
 
 == Misc. ==
 
-This plugin has been tested with version 0.9 of Habari. In the mean time, It is not certain if it works on earlier versions.
+This plugin has been tested with version 0.9 of Habari. It is not certain if it works on earlier versions.
 
 ===Recommended Settings===
 
