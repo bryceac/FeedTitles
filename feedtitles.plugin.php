@@ -20,16 +20,16 @@ class FeedTitles extends Plugin
 	public function action_init()
 	{
 		// create an object of the custom class
-		$this->feed = new Feeds(); 
-	}
-	
-	public function configure()
-	{
+		$this->feed = new Feeds();
+		
 		// set default values
 		Options::get('change_tag', true);
 		Options::get('change_pcomments', true);
 		Options::get('change_mcomments', true);
-		
+	}
+	
+	public function configure()
+	{	
 		// the following creates the config form
 		$ui = new FormUI('feed_config');
 		$tfeed = $ui->append('checkbox', 'mod_tag', 'change_tag', _t('Modify tag feed'));
