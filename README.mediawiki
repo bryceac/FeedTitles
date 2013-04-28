@@ -13,6 +13,12 @@ This plugin  combines the functionality of the following three plugins:
 </ul>
 
 Separately, the first item manipulates the feed title for tag feed, while the second and third deal with feed titles of the comment feeds, and they all manipulate the subtitles to reflect what the feeds should contain.
+== Version History ==
+
+<dl>
+<dt>'''0.1'''</dt><dd>Initial version. released 4/27/2013</dd>
+<dt>'''0.2'''</dt><dd>Update. Users now able to turn on or off feed modification as they please. released 4:27/2013 10:50 P.M. PST</dd>
+</dl>
 
 == Support ==
 
