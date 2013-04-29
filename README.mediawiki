@@ -18,7 +18,7 @@ Separately, the first item manipulates the feed title for tag feed, while the se
 <dl>
 <dt>'''0.1'''</dt><dd>Initial version. released 4/27/2013</dd>
 <dt>'''0.2'''</dt><dd>Update. Users now able to turn on or off feed modification as they please. released 4:27/2013 10:50 P.M. PST</dd>
-<dt>'''0.2.1'''</dt><dd>Minor update. Default options are finally set and options should be removed on plugin deaction. This should mean initial configuration is no longer necessary.</dd>
+<dt>'''0.2.1'''</dt><dd>Minor update. Default options are finally set and options should be removed on plugin deactivation. This should mean initial configuration is no longer necessary.</dd>
 </dl>
 
 == Support ==
