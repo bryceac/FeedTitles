@@ -20,7 +20,7 @@ Separately, the first item manipulates the feed title for tag feed, while the se
 <dt>'''0.2'''</dt><dd>Update. Users now able to turn on or off feed modification as they please. released 4:27/2013 10:50 P.M. PST</dd>
 <dt>'''0.2.1'''</dt><dd>Minor update. Default options are finally set and options should be removed on plugin deactivation. This should mean initial configuration is no longer necessary.</dd>
 <dt>'''0.2.2'''</dt><dd>Minor update. Fixed issue where form ui reported wrong state and notify user that configuration was saved. released 4/29/2013</dd>
-<dt>'''0.2.3'''</dt><dd>Minor update. Default options '''correctly''' set. Initial configuration no longer required.</dd>
+<dt>'''0.2.3'''</dt><dd>Minor update. Default options '''correctly''' set. Initial configuration no longer required. RELEASED 4/29/2013 9:17 A.M. PST</dd>
 </dl>
 
 == Support ==
