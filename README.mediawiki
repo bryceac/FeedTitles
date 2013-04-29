@@ -1,5 +1,5 @@
 = Feeds Title =
-'''Version:''' 0.2.2
+'''Version:''' 0.2.3
 '''Copyright:''' 2013 Bryce Campbell
 
 ==Description== 
@@ -20,6 +20,7 @@ Separately, the first item manipulates the feed title for tag feed, while the se
 <dt>'''0.2'''</dt><dd>Update. Users now able to turn on or off feed modification as they please. released 4:27/2013 10:50 P.M. PST</dd>
 <dt>'''0.2.1'''</dt><dd>Minor update. Default options are finally set and options should be removed on plugin deactivation. This should mean initial configuration is no longer necessary.</dd>
 <dt>'''0.2.2'''</dt><dd>Minor update. Fixed issue where form ui reported wrong state and notify user that configuration was saved. released 4/29/2013</dd>
+<dt>'''0.2.3'''</dt><dd>Minor update. Default options '''correctly''' set. Initial configuration no longer required.</dd>
 </dl>
 
 == Support ==
@@ -37,9 +38,3 @@ This plugin is Licensed under the [http://opensource.org/licenses/MIT MIT Licens
 == Misc. ==
 
 This plugin has been tested with version 0.9 of Habari. It is not certain if it works on earlier versions.
-
-===Recommended Settings===
-
-It looks like initial configuration is still required, but as of version 0.2.2, the state of the plugin configs are now properly set at all the time.
-
-One can enabled or disable whatever he or she wants. However, I recommend having all three items be checked, in order to get the most out of this plugin.
