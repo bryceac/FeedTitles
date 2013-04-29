@@ -23,9 +23,9 @@ class FeedTitles extends Plugin
 		$this->feed = new Feeds();
 		
 		// set options
-		Options::get('change_tag');
-		Options::get('change_pcomments');
-		Options::get('change_mcomments');
+		Options::get('change_tag', true);
+		Options::get('change_pcomments', true);
+		Options::get('change_mcomments', true);
 	}
 	
 	public function action_plugin_deactivation($file)
@@ -40,12 +40,12 @@ class FeedTitles extends Plugin
 	{	
 		// the following creates the config form
 		$ui = new FormUI('feed_config');
-		$ui->append('checkbox', 'mod_tag', 'change_tag', _t('Modify tag feed'));
-		$ui->mod_tag->value = true;
-		$ui->append('checkbox', 'mod_pcomments', 'change_pcomments', _t('Modify post comment feeds'));
-		$ui->mod_pcomments->value = true;
-		$ui->append('checkbox', 'mod_mcomments', 'change_mcomments', _t('Modify main comment feed'));
-		$ui->mod_mcomments->value = true;
+		$tfeed = $ui->append('checkbox', 'mod_tag', 'change_tag', _t('Modify tag feed'));
+		$tfeed->value = Options::get('change_tag');
+		$pcomments = $ui->append('checkbox', 'mod_pcomments', 'change_pcomments', _t('Modify post comment feeds'));
+		$pcomments->value = Options::get('change_pcomments');
+		$mcomments = $ui->append('checkbox', 'mod_mcomments', 'change_mcomments', _t('Modify main comment feed'));
+		$mcomments->value = Options::get('change_mcomments');
 		$ui->append('submit', 'save', 'Save');
 		$ui->set_option('success_message', _t('Configuration saved'));
 		return $ui;
