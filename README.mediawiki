@@ -1,5 +1,5 @@
 = Feeds Title =
-'''Version:''' 0.2.3
+'''Version:''' 0.3
 '''Copyright:''' 2013 Bryce Campbell
 
 ==Description== 
@@ -21,6 +21,7 @@ Separately, the first item manipulates the feed title for tag feed, while the se
 <dt>'''0.2.1'''</dt><dd>Minor update. Default options are finally set and options should be removed on plugin deactivation. This should mean initial configuration is no longer necessary.</dd>
 <dt>'''0.2.2'''</dt><dd>Minor update. Fixed issue where form ui reported wrong state and notify user that configuration was saved. released 4/29/2013</dd>
 <dt>'''0.2.3'''</dt><dd>Minor update. Default options '''correctly''' set. Initial configuration no longer required. RELEASED 4/29/2013 9:17 A.M. PST</dd>
+<dt>'''0.3'''</dt><dd>Update. Add Habari namespace so that plugin works in Habari 0.10 Alpha. released 6/7/2013</dd>
 </dl>
 
 == Support ==
