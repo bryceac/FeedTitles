@@ -47,14 +47,14 @@ class FeedTitles extends Plugin
 	{	
 		// the following creates the config form
 		$ui = new FormUI('feed_config');
-		$tfeed = $ui->append('checkbox', 'mod_tag', 'change_tag', _t('Modify tag feed'));
+		$tfeed = $ui->append(FormControlCheckbox::create('mod_tag', 'change_tag')->label(_t('Modify tag feed')));
 		$tfeed->value = Options::get('change_tag'); // retrieve current setting
-		$pcomments = $ui->append('checkbox', 'mod_pcomments', 'change_pcomments', _t('Modify post comment feeds'));
+		$pcomments = $ui->append(FormControlCheckbox::create('mod_pcomments', 'change_pcomments')->label(_t('Modify post comment feeds')));
 		$pcomments->value = Options::get('change_pcomments'); // retrieve current setting
-		$mcomments = $ui->append('checkbox', 'mod_mcomments', 'change_mcomments', _t('Modify main comment feed'));
+		$mcomments = $ui->append(FormControlCheckbox::create('mod_mcomments', 'change_mcomments')->label(_t('Modify main comment feed')));
 		$mcomments->value = Options::get('change_mcomments'); // retrieve current setting
-		$ui->append('submit', 'save', 'Save');
-		$ui->set_option('success_message', _t('Configuration saved'));
+		$ui->append(FormControlSubmit::create('save')->set_caption(_t('Save')));
+		$ui->set_settings(array('success_message' => _t('Configuration saved')));
 		return $ui;
 	}
 	
