@@ -28,7 +28,7 @@ Separately, the first item manipulates the feed title for tag feed, while the se
 
 If you are encountering issues, feel free to let me know at the address below.
 
-'''E-mail:''' brycecmpbell@gmail.com
+'''E-mail:''' habari@brycecampbell.me
 
 Please make sure that The name of the plugin in and '''Habari''' are in the subject field, so that I know what you talking about.
 
